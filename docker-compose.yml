@@ -23,7 +23,7 @@ services:
     volumes:
       - docker:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=docker
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=apivendas
 
   redis:
