@@ -1,6 +1,7 @@
 {
   "name": "api-vendas",
   "version": "1.0.0",
+  "description": "API Restful Javascript com Node.js, Typescript, TypeORM",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -8,6 +9,10 @@
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asqgk/api-vendas"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",

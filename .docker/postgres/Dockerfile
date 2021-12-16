@@ -1,5 +1,3 @@
-FROM postgres
-
-RUN chmod 700 -R /var/lib/postgresql/data
+FROM postgres 
 
 RUN usermod -u 1000 postgres
