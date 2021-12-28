@@ -1,5 +1,5 @@
 #!/bin/bash
 
-npm install
-npm run typeorm migration:run
-npm run dev
+yarn install
+yarn run typeorm migration:run
+yarn run dev
