@@ -1,16 +1,16 @@
 import { inject, injectable } from 'tsyringe';
-import { ICustomer } from '../domain/models/ICustomer';
 import { ICustomersRepository } from '../domain/repositories/ICustomersRepository';
+import { ICustomerPaginate } from '../domain/models/ICustomerPaginate';
 
-injectable();
+@injectable()
 class ListCustomerService {
   constructor(
     @inject('CustomersRepository')
     private customersRepository: ICustomersRepository,
   ) {}
 
-  public async execute(): Promise<ICustomer[] | undefined> {
-    const customers = await this.customersRepository.findAll();
+  public async execute(): Promise<ICustomerPaginate> {
+    const customers = await this.customersRepository.findAllPaginate();
 
     return customers;
   }
